@@ -13,6 +13,6 @@ class MyDocumentsTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        \App\Models\MyDocuments::factory()->count(30)->create();
     }
 }
