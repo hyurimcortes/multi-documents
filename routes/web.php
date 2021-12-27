@@ -14,5 +14,9 @@
 */
 
 $router->get('/', function () use ($router) {
-    return $router->app->version();
+    return ['version'=>'1.0'];
+});
+
+$router->get('/consulta', function () use ($router) {
+    return ['version'=>'1.0'];
 });
